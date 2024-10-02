@@ -42,6 +42,8 @@ const Header = () => {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto'>
               <SearchBox/>
+
+              {userInfo &&
               <LinkContainer to="/cart">
                 <Nav.Link><FaShoppingCart /> Cart
 
@@ -55,7 +57,8 @@ const Header = () => {
 
                 </Nav.Link>
               
-              </LinkContainer>
+              </LinkContainer> }
+              
               {
                 userInfo ? 
                 (
